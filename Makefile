@@ -1040,6 +1040,8 @@ endef
 define GIT_IGNORE
 __pycache__
 *.pyc
+dist/
+node_modules/
 endef
 
 define HTML_FOOTER
@@ -1591,6 +1593,7 @@ eb-logs-default:
 npm-init-default:
 	npm init -y
 	$(GIT_ADD) package.json
+	$(GIT_ADD) package-lock.json
 
 npm-build-default:
 	npm run build
@@ -2109,12 +2112,13 @@ jenkins-init-default:
 webpack-init-default: npm-init
 	@echo "$$WEBPACK_CONFIG_JS" > webpack.config.js
 	$(GIT_ADD) webpack.config.js
-	npm install --save-dev webpack webpack-cli
+	npm install --save-dev webpack webpack-cli webpack-dev-server
 	$(ADD_DIR) src/
 	@echo "$$WEBPACK_INDEX_JS" > src/index.js
 	$(GIT_ADD) src/index.js
 	@echo "$$WEBPACK_INDEX_HTML" > index.html
 	$(GIT_ADD) index.html
+	$(MAKE) gitignore
 
 make-default:
 	$(GIT_ADD) Makefile
