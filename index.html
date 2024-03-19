@@ -6,316 +6,56 @@
         <title>My Presentation</title>
         <link rel="stylesheet" href="dist/bundle.css">
     </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section>
-                    <h1>State of Pillow</h1>
-                    <h4>Originally presented</h4>
-                    <img class="img-thumbnail" width="50%" src="img/ploneconf.png">
-                    <h4>December 8, 2020</h4>
-                    <aside class="notes">
-                        Welcome to the "State of Pillow" talk at Plone Conference 2020 located online in fabulous virtual reality. Not yet but maybe someday.
-                    </aside>
-                </section>
-                <section>
-                    <h1>State of Pillow</h1>
-                    <h4>Also presented</h4>
-                    <img class="img-thumbnail" width="50%" src="img/also-presented.png">
-                    <h4>October 30, 2021</h4>
-                    <aside class="notes">
-                        Welcome to the "State of Pillow" talk at Plone Conference 2020 located online in fabulous virtual reality. Not yet but maybe someday.
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" src="img/tweet.png">
-                    <aside class="notes">
-                        This tweet from the Plone conference Twitter account is why I am here today. This very tweet and my undying love for Plone and the Plone community. It was made from the Plone Conference Twitter account,
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" src="img/erico.png">
-                    <aside class="notes">
-                        But I believe it was written by Érico Andrei. And if not, then here's a nice picture of Érico.
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" src="img/tweet5.png">
-                    <aside class="notes">
-                        It says "the community misses me" and I miss the Plone community too. It's good to be back. I haven't done much Plone development or integration since Plone 4 and I'm very curious about present day Plone.
-                    </aside>
-                </section>
-                <section>
-                    <h1>Thank you</h1>
-                    <h1>🙏</h1>
-                    <aside class="notes">
-                        Thank you Érico and Plone community for having me back. And thank you Plone for existing, because without Plone there would be no Pillow.
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail"
-                         width="50%"
-                         src="img/pillow-logo-dark-text-1280x640.png">
-                    <h1 class="mt-5">❤️</h1>
-                    <img class="img-thumbnail" width="50%" src="img/plone.png">
-                    <aside class="notes">
-                        I'll say it again: Pillow would not exist if not for Plone. So thank you Plone for existing, so we can all have a nice Python imaging library.
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" src="img/tweet2.png">
-                    <aside class="notes">
-                        Back to Twitter. Of course my response was "oh no I have to do work". Preparing for a talk is a lot of work. A crazy lot of work. But I did it and here we are. I hope you enjoy it.
-                    </aside>
-                </section>
-                <section>
-                    <h1>Alex Clark</h1>
-                    <img class="img-thumbnail" src="img/aclark-jobs.jpg">
-                    <h4 class="pt-5">Creator of Python Pillow</h4>
-                    <aside class="notes">
-                        I hope you enjoy it as much as I have enjoyed creating Pillow and watching it grow up. Hello. I am Alex Clark. Creator of Python Pillow.
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" width="80%" src="img/slide12.jpg">
-                    <p>Tres, Alex, Tarek, Russ @ Plone Conference 2008</p>
-                    <aside class="notes">
-                        I'm also this guy from Plone Conference 2008.
-                    </aside>
-                </section>
-                <section>
-                    <img src="img/pillow-logo-light-text-1280x640.png">
-                    <aside class="notes">
-                        Pillow is the "friendly" PIL fork. Originally stylized as "friendly" in quotes, now just plain friendly.
-                    </aside>
-                </section>
-                <section>
-                    <h2>Friendly</h2>
-                    <img src="img/pillow-logo-light-text-1280x640.png">
-                    <h2>PIL fork</h2>
-                    <aside class="notes">
-                        I included "friendly" in the description because I wanted to convey a collaborative goal. That, and I really didn't want to annoy Fredrik. Or at least I wanted to annoy him as little as possible.
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" src="img/wikipedia.png">
-                    <a target="_blank"
-                       href="https://en.wikipedia.org/wiki/Python_Imaging_Library">https://en.wikipedia.org/wiki/Python_Imaging_Library</a>
-                    <aside class="notes">
-                        PIL is the Python Imaging Library, by Fredrik Lundh and contributors. Thank you Fredrik and contributors. PIL has its own Wikipedia page which is nice and over the years, various references to Pillow have been added, which is also very nice.
-                    </aside>
-                </section>
-                <section>
-                    <h1>The Story of Pillow</h1>
-                    <aside class="notes">
-                        Before we get to the State of Pillow, I have to tell you the Story of Pillow. I wrote a blog entry once, called "The Story of Pillow", but I couldn't find it, so I'll have to try to remember.
-                    </aside>
-                </section>
-                <section>
-                    <h1>Raise your Zoom hand ✋ if you know the story</h1>
-                    <aside class="notes">
-                        Pillow began in 2010 with an email I sent to the Image-SIG mailing list. Anyone remember this email?
-                    </aside>
-                </section>
-                <section>
-                    <img class="img-thumbnail" src="img/slide2.png">
-                    <a target="_blank"
-                       href="https://mail.python.org/pipermail/image-sig/2010-July/006423.html">https://mail.python.org/pipermail/image-sig/2010-July/006423.html</a>
-                    <aside class="notes">
-                        This is the email I sent to the Image-SIG mailing list to announce the release of Pillow 1.0 in 2010. I recommend you read the full thread.
-                    </aside>
-                </section>
-                <section>
-                    <h1>Read these</h1>
-                    <a target="_blank"
-                       href="https://mail.python.org/pipermail/image-sig/2010-July/thread.html">https://mail.python.org/pipermail/image-sig/2010-July/thread.html</a>
-                    <a target="_blank"
-                       href="https://mail.python.org/pipermail/image-sig/2010-August/thread.html">https://mail.python.org/pipermail/image-sig/2010-August/thread.html</a>
-                    <aside class="notes">
-                        It spans two months from late July, through early August, 2010, and contains many interesting comments.
-                    </aside>
-                </section>
-                <section>
-                    <h1>Image-SIG</h1>
-                    <img class="img-thumbnail" src="img/july.png">
-                    <a target="_blank"
-                       href="https://mail.python.org/pipermail/image-sig/2010-July/thread.html">https://mail.python.org/pipermail/image-sig/2010-July/thread.html</a>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title Slide -->
+            <section>
+                <h1>Python Pillow + ASWF</h1>
+                <p>Presented to ASWF 3/20/24</p>
+            </section>
+            <!-- Slide 2: Introduction to ASWF -->
+            <section>
+                <h2>Introduction to ASWF</h2>
+                <p>
+                    The Academy Software Foundation (ASWF) is a collaborative effort to advance open source software development in the motion picture and media industries.
+                </p>
+                <p>
+                    It provides a neutral forum for open source software developers, users, and stakeholders in the media and entertainment industry to share resources and collaborate on technologies for image creation, visual effects, animation, and sound.
+                </p>
+            </section>
+            <!-- Slide 3: Introduction to Python Pillow -->
+            <section>
+                <h2>Introduction to Python Pillow</h2>
+                <p>Python Pillow is a powerful library for image processing and manipulation.</p>
+                <p>
+                    It provides easy-to-use functions and methods to perform various operations on images, such as opening, resizing, cropping, enhancing, filtering, and saving in different file formats.
+                </p>
+            </section>
+            <!-- Slide 4: Python Pillow as an Incubator Project -->
+            <section>
+                <h2>Python Pillow as an Incubator Project</h2>
+                <p>Python Pillow has been proposed as an incubator project under the ASWF Linux Foundation umbrella.</p>
+                <p>
+                    As an incubator project, Python Pillow will receive support, mentorship, and resources from ASWF to further develop and grow its community.
+                </p>
+            </section>
+            <!-- Slide 5: Benefits of Python Pillow as an Incubator Project -->
+            <section>
+                <h2>Benefits of Python Pillow as an Incubator Project</h2>
+                <ul>
+                    <li>Increased visibility and recognition within the media and entertainment industry</li>
+                    <li>Access to resources and mentorship from ASWF and Linux Foundation</li>
+                    <li>Opportunities for collaboration with other open source projects under ASWF</li>
+                    <li>Potential funding and support for project development and maintenance</li>
                 </ul>
-                <aside class="notes">
-                    I always enjoy looking through these threads, which is why you are seeing them here. My announcement was sent at the end of July 2010.
-                </aside>
             </section>
+            <!-- Slide 6: Conclusion -->
             <section>
-                <h1>Image-SIG</h1>
-                <img class="img-thumbnail" src="img/july-2.png">
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-July/006423.html">https://mail.python.org/pipermail/image-sig/2010-July/006423.html</a>
-                <aside class="notes">
-                    So the link is at the bottom of the July 2010 threaded view.
-                </aside>
-            </section>
-            <section>
-                <h1>Image-SIG</h1>
-                <img class="img-thumbnail" src="img/august.png">
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-August/thread.html">https://mail.python.org/pipermail/image-sig/2010-August/thread.html</a>
-                <aside class="notes">
-                    Most replies came in early August, so the links are at the top of the August 2010 threaded view.
-                </aside>
-            </section>
-            <section>
-                <h1>Image-SIG</h1>
-                <img class="img-thumbnail" src="img/august-2.png">
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-August/006429.html">https://mail.python.org/pipermail/image-sig/2010-August/006429.html</a>
-                <aside class="notes">
-                    Including Fredrik's reply, which came on Aug 1 2010.
-                </aside>
-            </section>
-            <section>
-                <h4>Image-SIG</h4>
-                <img class="img-thumbnail" width="80%" src="img/slide1.png">
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-August/006429.html">https://mail.python.org/pipermail/image-sig/2010-August/006429.html</a>
-                <aside class="notes">
-                    Here it is.
-                </aside>
-            </section>
-            <section>
-                <h4>Image-SIG</h4>
-                <img class="img-thumbnail" width="80%" src="img/slide16.png">
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-August/006429.html">https://mail.python.org/pipermail/image-sig/2010-August/006429.html</a>
-                <aside class="notes">
-                    I love this sentence in particular. Why do I love this sentence?
-                </aside>
-            </section>
-            <section>
-                <h1>Image-SIG</h1>
-                <blockquote>
-                    "At least a packaging
-                    fork means that someone's over there is producing something more than
-                    invectives, but I'd still prefer a patch."
-                </blockquote>
-                <p>&mdash; Fredrik Lundh on Pillow</p>
-                <aside class="notes">
-                    It provides validation of some kind, but also "invectives"? I had to look that one up.
-                </aside>
-            </section>
-            <section>
-                <img class="img-thumbnail" width="50%" src="img/invective2.png">
-                <aside class="notes">
-                    Insulting or abusive language. Not good.
-                </aside>
-            </section>
-            <section>
-                <h4>Image-SIG</h4>
-                <img class="img-thumbnail" width="80%" src="img/slide20.png">
-                <a target="_blank" href=""></a>
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-August/006428.html">https://mail.python.org/pipermail/image-sig/2010-August/006428.html</a>
-                <aside class="notes">
-                    That was Fredrik's direct reply to me, but he responded early in the thread to someone else.
-                </aside>
-            </section>
-            <section>
-                <h1>Standards change</h1>
-                <pre class="bg-white text-dark p-3">
-> Although the "PIL" and "Image*" packages themselves do not
-> respect python standards (should be from imaging import .., or
-> something alike).
-
-If you had been paying attention, you'd noticed that "python
-standards" change all the time, depend on what the latest minibosses
-think (suggestion: look up old versions of PEP 8 before you post stuff
-about how others ignore the "standards").
-                    </pre>
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2010-August/006428.html">https://mail.python.org/pipermail/image-sig/2010-August/006428.html</a>
-                <aside class="notes">
-                    Now we are getting somewhere.
-                </aside>
-            </section>
-            <section>
-                <h1>How did we get here?</h1>
-                <aside class="notes">
-                    To explain how we got here we need to go back.
-                </aside>
-            </section>
-            <section>
-                <img class="img-thumbnail" src="img/nirvana.jpg">
-                <h4>February 1991</h4>
-                <aside class="notes">
-                    We need to go all the way back to February of 1991. Who knows what happened in February 1991?
-                </aside>
-            </section>
-            <section>
-                <h1>Timeline</h1>
-                <div class="timeline mb-5">
-                    <div class="col-6 left">
-                        <div class="content">
-                            <h2>1991</h2>
-                            <p>Python 0.9.0 (alt.sources)</p>
-                        </div>
-                    </div>
-                </div>
-                <a target="_blank"
-                   href="https://en.wikipedia.org/wiki/History_of_Python">https://en.wikipedia.org/wiki/History_of_Python</a>
-                <aside class="notes">
-                    Python was born. Guido posted it to usenet. It was actually born in the late 80s but published in 1991.
-                </aside>
-            </section>
-            <section>
-                <h1>Ancient releases</h1>
-                <blockquote>
-                    Andrew Dalke was clever and persistent enough to scrape Python 0.9.1 out of the Usenet alt.sources archives and assemble a compressed tarball. It's here mostly as a historical relic.
-                </blockquote>
-                <a target="_blank"
-                   href="https://www.python.org/download/releases/early/">https://www.python.org/download/releases/early/</a>
-                <aside class="notes">
-                    In fact you can still download Python 0.9.1 from a section of python.org called "Ancient Releases".
-                </aside>
-            </section>
-            <section>
-                <h1>"Ancient"</h1>
-                <aside class="notes">
-                    "Ancient releases". A looong time ago. So what happened next during these ancient times?
-                </aside>
-            </section>
-            <section>
-                <img class="img-thumbnail" src="img/foos.jpg">
-                <h4>June 1995</h4>
-                <aside class="notes">
-                    Who knows what happened in June 1995?
-                </aside>
-            </section>
-            <section>
-                <h1>Timeline</h1>
-                <div class="timeline">
-                    <div class="col-6 left">
-                        <div class="content">
-                            <h2>1991</h2>
-                            <p>Python 0.9.0 (alt.sources)</p>
-                        </div>
-                    </div>
-                    <div class="col-6 right">
-                        <div class="content">
-                            <h2>1995</h2>
-                            <p>PIL</p>
-                        </div>
-                    </div>
-                </div>
-                <aside class="notes">
-                    PIL was born. I don't know the details, but
-                </aside>
-            </section>
-            <section>
-                <img class="img-thumbnail" src="img/slide9.png">
-                <a target="_blank"
-                   href="https://mail.python.org/pipermail/image-sig/2005-June/003377.html">https://mail.python.org/pipermail/image-sig/2005-June/003377.html</a>
-                <aside class="notes">
-                    We do know that Fredrik celebrated PIL's 10 year anniversary in 2005.
-                </aside>
+                <h2>Conclusion</h2>
+                <p>
+                    Python Pillow has the potential to thrive as an incubator project under the ASWF Linux Foundation umbrella, benefiting from the support, resources, and collaboration opportunities provided by the foundation.
+                </p>
+                <p>Thank you for considering Python Pillow for incubation!</p>
             </section>
         </div>
     </div>
