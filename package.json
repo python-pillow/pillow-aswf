@@ -5,12 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development --port 8000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.10.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "style-loader": "^3.3.4",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.3"
@@ -206,6 +209,7 @@
     "resolve-cwd": "^3.0.0",
     "resolve-from": "^5.0.0",
     "retry": "^0.13.1",
+    "reveal.js": "^5.0.5",
     "rimraf": "^5.0.5",
     "run-applescript": "^7.0.0",
     "safe-buffer": "^5.2.1",
