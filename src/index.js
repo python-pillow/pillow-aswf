@@ -3,4 +3,6 @@ import 'reveal.js/dist/theme/black.css';
 import Reveal from 'reveal.js';
 
 // Initialize Reveal
-Reveal.initialize();
+Reveal.initialize({
+    plugins: [ RevealNotes ]
+});
