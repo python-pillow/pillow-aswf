@@ -1,6 +1,7 @@
 PROJECT_NAME := pillow-aswf
 serve:
-	npm run watch
+	npm run watch &
+	python -m http.server
 
 build:
 	npm run build
