@@ -1,5 +1,4 @@
 PROJECT_NAME := pillow-aswf
-
 serve:
 	npm run start
 
@@ -10,4 +9,4 @@ edit:
 	vi index.html
 
 lint:
-	djlint --reformat index.html
+	djlint --reformat --format-css --format-js index.html
