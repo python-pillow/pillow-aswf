@@ -5,3 +5,9 @@ serve:
 
 build:
 	npm run build
+
+edit:
+	vi index.html
+
+lint:
+	djlint --reformat index.html
